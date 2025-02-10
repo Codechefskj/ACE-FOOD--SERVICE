@@ -1,0 +1,19 @@
+.mainshimmerui {
+  flex-wrap: wrap;
+  margin: 10px;
+  display: flex;
+}
+
+.cart1 {
+  border: 1px solid #000;
+  width: 220px;
+  height: 350px;
+  margin: 20px;
+}
+
+.shimmerheader {
+  border: 1px solid #000;
+  width: 100%;
+  height: 60px;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
