@@ -1,4 +1,4 @@
-<img width="1238" alt="Screenshot 2025-02-17 at 11 07 05 PM" src="https://github.com/user-attachments/assets/9bccbc0d-b630-457f-8241-8c2eef8e27fc" />Ace Food Service – A production-ready, scalable food ordering platform built with React 18, Redux Toolkit, React Router, Tailwind CSS, and Parcel Bundler. Designed for performance and efficiency, it seamlessly integrates modern web technologies to enhance the user experience.
+Ace Food Service – A production-ready, scalable food ordering platform built with React 18, Redux Toolkit, React Router, Tailwind CSS, and Parcel Bundler. Designed for performance and efficiency, it seamlessly integrates modern web technologies to enhance the user experience.
 
 Key Features & Technologies:
 React Router DOM for smooth navigation across Gallery, Contact, Cart, and Instamart.
