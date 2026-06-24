@@ -2975,6 +2975,8 @@ var _appstoreJsx = require("./Utils/appstore.jsx");
 var _appstoreJsxDefault = parcelHelpers.interopDefault(_appstoreJsx);
 var _cartJsx = require("./components/cart.jsx");
 var _cartJsxDefault = parcelHelpers.interopDefault(_cartJsx);
+var _foodOrderManager = require("./components/FoodOrderManager");
+var _foodOrderManagerDefault = parcelHelpers.interopDefault(_foodOrderManager);
 const Instamart = /*#__PURE__*/ (0, _react.lazy)(()=>require("8c6badacc82a6151"));
 _c = Instamart;
 const Layout = ()=>{
@@ -2985,35 +2987,35 @@ const Layout = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsxDefault.default), {}, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "flex-grow",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "src/main.js",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 24,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/main.js",
-            lineNumber: 22,
+            lineNumber: 23,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/main.js",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 5
     }, undefined);
 };
@@ -3023,12 +3025,12 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {}, void 0, false, {
             fileName: "src/main.js",
-            lineNumber: 36,
+            lineNumber: 37,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
             fileName: "src/main.js",
-            lineNumber: 37,
+            lineNumber: 38,
             columnNumber: 19
         }, undefined),
         children: [
@@ -3036,7 +3038,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/GALLERY",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _galleryJsxDefault.default), {}, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 18
                 }, undefined),
                 children: [
@@ -3044,7 +3046,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileJsDefault.default), {}, void 0, false, {
                             fileName: "src/main.js",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 22
                         }, undefined)
                     }
@@ -3054,7 +3056,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {}, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 51,
+                    lineNumber: 52,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3062,7 +3064,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 55,
+                    lineNumber: 56,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3070,7 +3072,7 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurants/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsDefault.default), {}, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 59,
+                    lineNumber: 60,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3079,17 +3081,17 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerUIJsxDefault.default), {}, void 0, false, {
                         fileName: "src/main.js",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 31
                     }, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
                         fileName: "src/main.js",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 64,
+                    lineNumber: 65,
                     columnNumber: 11
                 }, undefined)
             },
@@ -3097,7 +3099,15 @@ const approuter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartJsxDefault.default), {}, void 0, false, {
                     fileName: "src/main.js",
-                    lineNumber: 71,
+                    lineNumber: 72,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "/food-order-manager",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodOrderManagerDefault.default), {}, void 0, false, {
+                    fileName: "src/main.js",
+                    lineNumber: 76,
                     columnNumber: 18
                 }, undefined)
             }
@@ -3109,7 +3119,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: approuter
 }, void 0, false, {
     fileName: "src/main.js",
-    lineNumber: 78,
+    lineNumber: 83,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -3121,7 +3131,7 @@ $RefreshReg$(_c1, "Layout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header.jsx":"knC38","./components/Footer.jsx":"2OVeV","./components/Body.jsx":"hHUrP","react-router-dom":"9xmpe","./components/GALLERY.jsx":"1ZFpr","./components/Error.js":"kvula","./components/contact.js":"kLvWg","./components/RestaurantMenu.js":"8PuJ6","./components/profile.js":"5ILuw","./components/shimmerUI.jsx":"jCEY9","react-redux":"62sf7","./Utils/appstore.jsx":"7IN8j","./components/cart.jsx":"XPapF","8c6badacc82a6151":"gs1iR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header.jsx":"knC38","./components/Footer.jsx":"2OVeV","./components/Body.jsx":"hHUrP","react-router-dom":"9xmpe","./components/GALLERY.jsx":"1ZFpr","./components/Error.js":"kvula","./components/contact.js":"kLvWg","./components/RestaurantMenu.js":"8PuJ6","./components/profile.js":"5ILuw","./components/shimmerUI.jsx":"jCEY9","react-redux":"62sf7","./Utils/appstore.jsx":"7IN8j","./components/cart.jsx":"XPapF","8c6badacc82a6151":"gs1iR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/FoodOrderManager":"aNnce"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -27377,12 +27387,12 @@ const Header = ()=>{
                                 children: "Gallery"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 30,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 29,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27392,12 +27402,12 @@ const Header = ()=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 33,
+                                lineNumber: 37,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 32,
+                            lineNumber: 36,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27410,12 +27420,12 @@ const Header = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 36,
-                                columnNumber: 30
+                                lineNumber: 43,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 36,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27425,12 +27435,35 @@ const Header = ()=>{
                                 children: "Instamart"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 39,
+                                lineNumber: 49,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 38,
+                            lineNumber: 48,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/food-order-manager",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    className: "hover:text-emerald-400 transition-colors hover:underline"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 54,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: "Food Manager"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 55,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 53,
                             columnNumber: 11
                         }, undefined)
                     ]
@@ -27452,7 +27485,7 @@ const Header = ()=>{
                 children: "LOGOUT"
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 45,
+                lineNumber: 61,
                 columnNumber: 9
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: ()=>{
@@ -27462,7 +27495,7 @@ const Header = ()=>{
                 children: "LOGIN"
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 54,
+                lineNumber: 70,
                 columnNumber: 9
             }, undefined)
         ]
@@ -35695,11 +35728,24 @@ const useResturantsname = ()=>{
         getResturantInfoThroughApi();
     }, []);
     async function getResturantInfoThroughApi() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.99740&lng=79.00110&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
-        const json = await data.json();
-        const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-        setAllResturants(restaurants);
-        setFilterResturant(restaurants);
+        try {
+            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.99740&lng=79.00110&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+            if (!data.ok) throw new Error("Failed to fetch restaurants");
+            const json = await data.json();
+            const restaurants = json?.data?.cards?.[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            if (restaurants.length > 0) {
+                setAllResturants(restaurants);
+                setFilterResturant(restaurants);
+            } else {
+                console.log("API returned empty data. Using local data.");
+                setAllResturants((0, _config.Resturantinfo));
+                setFilterResturant((0, _config.Resturantinfo));
+            }
+        } catch (error) {
+            console.log("Swiggy API Failed. Using Local Data.", error);
+            setAllResturants((0, _config.Resturantinfo));
+            setFilterResturant((0, _config.Resturantinfo));
+        }
     }
     return [
         allResturants,
@@ -40480,6 +40526,492 @@ module.exports = function(loader, type) {
     };
 };
 
-},{}]},["aQL8O","1Fqy1","gLLPy"], "gLLPy", "parcelRequire94c2")
+},{}],"aNnce":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$c338 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c338.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const FoodOrderManager = ()=>{
+    _s();
+    const [orders, setOrders] = (0, _react.useState)(()=>{
+        const saved = localStorage.getItem("orders");
+        return saved ? JSON.parse(saved) : [];
+    });
+    const [formData, setFormData] = (0, _react.useState)({
+        orderId: "",
+        restaurantName: "",
+        itemCount: "",
+        isPaid: false,
+        deliveryDistance: ""
+    });
+    const [statusFilter, setStatusFilter] = (0, _react.useState)("all");
+    const [distanceFilter, setDistanceFilter] = (0, _react.useState)("");
+    const [assignDistance, setAssignDistance] = (0, _react.useState)("");
+    const [output, setOutput] = (0, _react.useState)("");
+    (0, _react.useEffect)(()=>{
+        localStorage.setItem("orders", JSON.stringify(orders));
+    }, [
+        orders
+    ]);
+    const handleChange = (e)=>{
+        const { name, value, type, checked } = e.target;
+        setFormData({
+            ...formData,
+            [name]: type === "checkbox" ? checked : value
+        });
+    };
+    const addOrder = ()=>{
+        if (!formData.orderId || !formData.restaurantName || !formData.itemCount || !formData.deliveryDistance) {
+            alert("Fill all fields");
+            return;
+        }
+        setOrders([
+            ...orders,
+            {
+                ...formData,
+                itemCount: Number(formData.itemCount),
+                deliveryDistance: Number(formData.deliveryDistance)
+            }
+        ]);
+        setFormData({
+            orderId: "",
+            restaurantName: "",
+            itemCount: "",
+            isPaid: false,
+            deliveryDistance: ""
+        });
+    };
+    const assignDelivery = ()=>{
+        const maxDistance = Number(assignDistance);
+        const eligibleOrders = orders.filter((order)=>!order.isPaid && order.deliveryDistance <= maxDistance).sort((a, b)=>a.deliveryDistance - b.deliveryDistance);
+        if (eligibleOrders.length === 0) {
+            setOutput("No order available");
+            return;
+        }
+        setOutput(`Assigned Order: ${eligibleOrders[0].orderId} (${eligibleOrders[0].restaurantName})`);
+    };
+    const filteredOrders = orders.filter((order)=>{
+        const statusMatch = statusFilter === "all" ? true : statusFilter === "paid" ? order.isPaid : !order.isPaid;
+        const distanceMatch = distanceFilter === "" ? true : order.deliveryDistance <= Number(distanceFilter);
+        return statusMatch && distanceMatch;
+    });
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "max-w-7xl mx-auto p-8",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-4xl font-bold mb-8 text-center",
+                children: "Food Order Manager"
+            }, void 0, false, {
+                fileName: "src/components/FoodOrderManager.jsx",
+                lineNumber: 103,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "bg-white p-6 rounded shadow mb-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-2xl font-bold mb-4",
+                        children: "Add Order"
+                    }, void 0, false, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 111,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid md:grid-cols-2 gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                name: "orderId",
+                                value: formData.orderId,
+                                onChange: handleChange,
+                                placeholder: "Order ID",
+                                className: "border p-3 rounded"
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 117,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                name: "restaurantName",
+                                value: formData.restaurantName,
+                                onChange: handleChange,
+                                placeholder: "Restaurant Name",
+                                className: "border p-3 rounded"
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 125,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                name: "itemCount",
+                                value: formData.itemCount,
+                                onChange: handleChange,
+                                placeholder: "Item Count",
+                                type: "number",
+                                className: "border p-3 rounded"
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 133,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                name: "deliveryDistance",
+                                value: formData.deliveryDistance,
+                                onChange: handleChange,
+                                placeholder: "Distance",
+                                type: "number",
+                                className: "border p-3 rounded"
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 142,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                className: "flex items-center gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                        type: "checkbox",
+                                        checked: formData.isPaid,
+                                        name: "isPaid",
+                                        onChange: handleChange
+                                    }, void 0, false, {
+                                        fileName: "src/components/FoodOrderManager.jsx",
+                                        lineNumber: 152,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    "Paid Order"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 151,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 115,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: addOrder,
+                        className: "bg-green-600 text-white px-6 py-3 mt-4 rounded",
+                        children: "Add Order"
+                    }, void 0, false, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 163,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/FoodOrderManager.jsx",
+                lineNumber: 109,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "bg-white p-6 rounded shadow mb-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-2xl font-bold mb-4",
+                        children: "Filter Orders"
+                    }, void 0, false, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 175,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                value: statusFilter,
+                                onChange: (e)=>setStatusFilter(e.target.value),
+                                className: "border p-3 rounded",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "all",
+                                        children: "All"
+                                    }, void 0, false, {
+                                        fileName: "src/components/FoodOrderManager.jsx",
+                                        lineNumber: 188,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "paid",
+                                        children: "Paid"
+                                    }, void 0, false, {
+                                        fileName: "src/components/FoodOrderManager.jsx",
+                                        lineNumber: 189,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "unpaid",
+                                        children: "Unpaid"
+                                    }, void 0, false, {
+                                        fileName: "src/components/FoodOrderManager.jsx",
+                                        lineNumber: 190,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 181,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "number",
+                                placeholder: "Max Distance",
+                                value: distanceFilter,
+                                onChange: (e)=>setDistanceFilter(e.target.value),
+                                className: "border p-3 rounded"
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 193,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 179,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/FoodOrderManager.jsx",
+                lineNumber: 173,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "bg-white p-6 rounded shadow mb-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-2xl font-bold mb-4",
+                        children: "Assign Delivery"
+                    }, void 0, false, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 209,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "number",
+                                placeholder: "Enter Distance",
+                                value: assignDistance,
+                                onChange: (e)=>setAssignDistance(e.target.value),
+                                className: "border p-3 rounded"
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 215,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: assignDelivery,
+                                className: "bg-blue-600 text-white px-6 py-3 rounded",
+                                children: "Assign Delivery"
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 225,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 213,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/FoodOrderManager.jsx",
+                lineNumber: 207,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "bg-yellow-100 p-6 rounded shadow mb-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-xl font-bold",
+                        children: "Output"
+                    }, void 0, false, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 237,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "mt-3 text-lg",
+                        children: output
+                    }, void 0, false, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 241,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/FoodOrderManager.jsx",
+                lineNumber: 236,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "bg-white p-6 rounded shadow",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-2xl font-bold mb-4",
+                        children: "All Orders"
+                    }, void 0, false, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 250,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                        className: "w-full border",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            className: "border p-2",
+                                            children: "Order ID"
+                                        }, void 0, false, {
+                                            fileName: "src/components/FoodOrderManager.jsx",
+                                            lineNumber: 258,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            className: "border p-2",
+                                            children: "Restaurant"
+                                        }, void 0, false, {
+                                            fileName: "src/components/FoodOrderManager.jsx",
+                                            lineNumber: 259,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            className: "border p-2",
+                                            children: "Items"
+                                        }, void 0, false, {
+                                            fileName: "src/components/FoodOrderManager.jsx",
+                                            lineNumber: 260,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            className: "border p-2",
+                                            children: "Paid"
+                                        }, void 0, false, {
+                                            fileName: "src/components/FoodOrderManager.jsx",
+                                            lineNumber: 261,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            className: "border p-2",
+                                            children: "Distance"
+                                        }, void 0, false, {
+                                            fileName: "src/components/FoodOrderManager.jsx",
+                                            lineNumber: 262,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/FoodOrderManager.jsx",
+                                    lineNumber: 257,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 256,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                children: filteredOrders.map((order)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "border p-2",
+                                                children: order.orderId
+                                            }, void 0, false, {
+                                                fileName: "src/components/FoodOrderManager.jsx",
+                                                lineNumber: 269,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "border p-2",
+                                                children: order.restaurantName
+                                            }, void 0, false, {
+                                                fileName: "src/components/FoodOrderManager.jsx",
+                                                lineNumber: 270,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "border p-2",
+                                                children: order.itemCount
+                                            }, void 0, false, {
+                                                fileName: "src/components/FoodOrderManager.jsx",
+                                                lineNumber: 273,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "border p-2",
+                                                children: order.isPaid ? "Yes" : "No"
+                                            }, void 0, false, {
+                                                fileName: "src/components/FoodOrderManager.jsx",
+                                                lineNumber: 276,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                className: "border p-2",
+                                                children: [
+                                                    order.deliveryDistance,
+                                                    " KM"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/FoodOrderManager.jsx",
+                                                lineNumber: 279,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, order.orderId, true, {
+                                        fileName: "src/components/FoodOrderManager.jsx",
+                                        lineNumber: 268,
+                                        columnNumber: 15
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/components/FoodOrderManager.jsx",
+                                lineNumber: 266,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FoodOrderManager.jsx",
+                        lineNumber: 254,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/FoodOrderManager.jsx",
+                lineNumber: 248,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/FoodOrderManager.jsx",
+        lineNumber: 101,
+        columnNumber: 5
+    }, undefined);
+};
+_s(FoodOrderManager, "xPvocFzd+yIbZVpYEnnxCA+b+TE=");
+_c = FoodOrderManager;
+exports.default = FoodOrderManager;
+var _c;
+$RefreshReg$(_c, "FoodOrderManager");
+
+  $parcel$ReactRefreshHelpers$c338.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","1Fqy1","gLLPy"], "gLLPy", "parcelRequire94c2")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map

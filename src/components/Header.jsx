@@ -24,19 +24,35 @@ const Header = () => {
       <div className="flex gap-10">
         <ul className="flex gap-6 text-lg font-semibold tracking-wide">
           <Link to={"/"}>
-            <li className="hover:text-emerald-400 transition-colors hover:underline">Home</li>
+            <li className="hover:text-emerald-400 transition-colors hover:underline">
+              Home
+            </li>
           </Link>
           <Link to={"/GALLERY"}>
-            <li className="hover:text-emerald-400 transition-colors hover:underline">Gallery</li>
+            <li className="hover:text-emerald-400 transition-colors hover:underline">
+              Gallery
+            </li>
           </Link>
           <Link to={"/contact"}>
-            <li className="hover:text-emerald-400 transition-colors hover:underline">Contact</li>
+            <li className="hover:text-emerald-400 transition-colors hover:underline">
+              Contact
+            </li>
           </Link>
 
-          <Link to={"/Cart"}><li className="hover:text-emerald-400 transition-colors hover:underline">Cart - {cartItemCount}</li></Link>
-          
+          <Link to={"/Cart"}>
+            <li className="hover:text-emerald-400 transition-colors hover:underline">
+              Cart - {cartItemCount}
+            </li>
+          </Link>
+
           <Link to={"/Instamart"}>
-            <li className="hover:text-emerald-400 transition-colors hover:underline">Instamart</li>
+            <li className="hover:text-emerald-400 transition-colors hover:underline">
+              Instamart
+            </li>
+          </Link>
+          <Link to={"/food-order-manager"}>
+            <li className="hover:text-emerald-400 transition-colors hover:underline"></li>
+            <li>Food Manager</li>
           </Link>
         </ul>
       </div>
